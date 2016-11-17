@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Katherine T. Nguyen">
+<title>Katherine T. Nguyen</title>
+<link href="gallery.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- the following <script> code snippets are from:
+http://www.internetkultur.at/simple-hamburger-drop-down-menu-with-css-and-jquery/  I edited parts as needed to fit better with my layout. -->
+
+<script type="text/javascript">
+	jQuery(function($){
+    	$( '.menu-btn' ).click(function(){
+    		$('.responsive-menu').addClass('expand')
+    		$('.menu-btn').addClass('btn-none')
+    	})
+    	
+    	 $( '.close-btn' ).click(function(){
+    		$('.responsive-menu').removeClass('expand')
+    		$('.menu-btn').removeClass('btn-none')
+    	})
+  	})
+ </script>
+ 
+ <script type="text/javascript">
+	jQuery(function($){
+    	     $( '.menu-btn' ).click(function(){
+    	     $('.responsive-menu').toggleClass('expand')
+    	     })
+        })
+</script>
+
+<body>
+<div class="mobile-nav">
+	<div class="menu-btn" id="menu-btn">
+	<div></div>
+	<span><a href="home_page.html"><img src="img/cat icon.png" alt="cat icon" width="10%" />Home page</a></span>
+	<span><a href="profile_page.html"><img src="img/cat icon.png" alt="cat icon" width="10%" />Personal bio</a></span>
+	</div>
+	
+	<div class="responsive-menu">
+		<ul>
+			<li>1. Object</li>
+            <li>2. Object</li>
+        </ul>
+    </div>
+</div>    
+
+
+<!--  <div class="header"><a href="home_page.html"><img src="img/cat icon.png" alt="Insert Logo Here" name="Insert_logo" width="10%" id="Insert_logo" style="background-color: #603; display: inline-block; color: #FFF" />Back to the home page!</a>
+  <div class="profile">
+<a href="profile_page.html"><img src="img/cat icon.png" alt="cat icon" width="10%" />Personal Bio</a>  -->
+    <!-- end .header --></div>
+  <div class="content">
+    <h2>Photo Gallery</h2>
+    <img src="img/13582462_10209594265323577_2122483802_o.jpg" alt="pic1"width= 24%/>
+    <img src="img/IMG_20130205_181305.jpg" alt="pic2" width= 24%/>
+    <img src="img/IMG_20140112_190355.jpg" alt="pic3" width= 24%/>
+    <img src="img/IMG_20160822_210522.jpg" alt="pic4" width= 24%/>
+    <img src="img/Snapchat-837905922190847224.jpg" alt="pic5" width= 24%/>
+    <img src="img/IMG_20130208_111537.jpg" alt="pic6" width= 24%/>
+    <img src="img/Snapchat-6156294905688619401.jpg" alt="pic7" width= 24%/>
+    
+    <img src="img/Snapchat-6992534677065175623.jpg" alt="pic8" width= 24%/>
+    <img src="img/IMG_20160807_121255.jpg" alt="pic9" width= 24%/>
+    <img src="img/Snapchat-1167450504163334957.jpg" alt= "pic10" width= 24%/>
+    <!-- end .content --></div>
+  <div class="footer">
+    <h3>Katherine T. Nguyen</h3>
+    <p><a href="kathetn1@uci.edu">kathetn1@uci.edu</a></p>
+    <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+body {
+	font: 100%/1.0 "Times New Roman", Times, serif;
+	background-color: #603;
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 
+	padding-right: 5%;
+	padding-left: 5%; 
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+	background-color: #C36;
+	padding: .2em 0 .4em 0;
+	width: 100%;
+
+}
+
+.profile {
+	position: relative;
+	width= 100%;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 50%;
+/*		background-color: #606;  test */
+	}
+}
+
+@media only screen and (min-width: 750px) {
+	body {
+		font-size: 75%;
+/*		background-color: #606;  test */
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	body {
+		font-size: 100%;
+/*		background-color: #606;  test */  
+	}
+}	
+
+h2 {
+	text-align: justify;
+	font-size: 1.4m;
+	padding: .1em 0 .1em 0;
+	background-color: #C36;
+	width: 100%;
+	margin: .2em 0 .2em 0;
+}
+
+h2 img { /*cat icon */
+	vertical-align: middle;
+}
+
+h3, p {
+	color: #000;
+	font-size: 1em;
+}
+
+.bottom {
+	background-color:#FFF;
+	padding: 0.5em 0 0.5em 0;
+}
+
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color:#414958;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
+.container {
+	width: 80%;
+	max-width: 1260px;/
+	background-color: #333;
+	margin: 0 auto; /
+}
+
+/* ~~ This is the layout information. ~~*/
+.content {
+	padding: 0 auto;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; 
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}

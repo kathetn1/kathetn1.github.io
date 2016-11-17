@@ -1,0 +1,129 @@
+@charset "utf-8";
+body {
+	font: 100%/1.0 "Times New Roman", Times, serif;
+	background-color: #603;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 
+	padding-right: 15px;
+	padding-left: 15px;
+	color: #FFF; 
+}
+
+
+a img { 
+	border: none;
+	vertical-align: middle;
+}
+
+
+a:link {
+	color:#414958;
+	text-decoration: underline; 
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+
+
+.container {
+	width: 80%;
+	max-width: 1260px;
+	min-width: 780px;
+	background-color: #FFF;
+	margin: 0 auto;
+}
+
+.mobile-nav a {
+	color: #FFF;
+}
+
+.header {
+	background-color: #603;
+}
+
+.header a {
+	color: #FFF;
+	font-size:1em;
+}
+
+
+.content {
+	padding: 10px 0;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; 
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #6F7D94;
+	text-align: right;
+}
+
+.fltrt {  
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+
+.responsive-menu{
+max-height:0;
+background:#999999;
+width:300px;
+overflow:hidden;
+transition:all .25s;
+}
+
+.expand {
+
+max-height:300px; 
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 50%;
+/*		background-color: #606;  test */
+	}
+}
+
+@media only screen and (min-width: 750px) {
+	body {
+		font-size: 75%;
+/*		background-color: #606;  test */
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	body {
+		font-size: 100%;
+/*		background-color: #606;  test */  
+	}
+}	
