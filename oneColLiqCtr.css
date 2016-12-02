@@ -1,79 +1,107 @@
 @charset "utf-8";
 
 body {
-	font: 100%/1.0 "Times New Roman", Times, serif;
-	background-color: #603;
+	font: 100%/1.0 Franklin Gothic, Helvetica, Verdana;
+	background-color: #CDCDC0;
 	margin: 0;
 	padding: 0;
-	color: #FFF;
-	
-}
-
-h1, h2, h3, h4, h5, h6, p {
 	margin-top: 0;	 
 	padding-right: 5%;
-	padding-left: 5%; 
+	padding-left: 5%;
+	color: #626D71;
+}
+
+/* --- LEFT COLUMN --- */
+
+.menu {
+	width: 30%;
+	float: left;
+}
+
+/* --- RIGHT COLUMN --- */
+
+#name {
+	vertical-align: middle;
+	margin-left: -1em;
+	margin-top: -1em;
+}
+
+#motto {
+	color: #626D71;
+	padding-right: 1em;
+	text-align: right;
+}
+
+h1, h2 {
+	font-family: Georgia, Garamond, Baskerville, Times New Roman;
 }
 
 h1 {
-	text-align: center;
-	font-size: 3em;
-	background-color: #C36;
+	text-align: right;
+	font-size: 1.7em;
 	padding: .2em 0 .4em 0;
 	width: 100%;
-
+	color: #b38867;
+	font-style: italic;
 }
 
 .profile {
 	position: relative;
-	width= 100%;
+	width= 50%;	
 }
-
-/* MEDIA QUERIES */
-@media only screen and (max-width: 500px) {
-	body {
-		font-size: 50%;
-/*		background-color: #606;  test */
-	}
-}
-
-@media only screen and (min-width: 750px) {
-	body {
-		font-size: 75%;
-/*		background-color: #606;  test */
-	}
-}
-
-@media only screen and (max-width: 1000px) {
-	body {
-		font-size: 100%;
-/*		background-color: #606;  test */  
-	}
-}	
 
 h2 {
 	text-align: justify;
-	font-size: 1.4m;
-	padding: .1em 0 .1em 0;
-	background-color: #C36;
+	font-size: 1.4em;
 	width: 100%;
 	margin: .2em 0 .2em 0;
 }
 
-h2 img { /*cat icon */
-	vertical-align: middle;
+h3 {
+	font-size: 1.2em;
 }
 
-h3, p {
-	color: #000;
+h3 img { /*cat icon */
+	float: left;
+	text-align: center;
+}
+
+h3 a {
+	margin: 0 1em 0 .1em;
+}
+
+h4 {
+	font-size: 1.1em;
+}
+
+p {
 	font-size: 1em;
 }
 
-.bottom {
-	background-color:#FFF;
-	padding: 0.5em 0 0.5em 0;
+/* ---  --- */
+
+#rotating-item-wrapper {
+    position: relative;
+    width: 980px;
+    height: 347px;
+}
+.rotating-item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
+/* ---  --- */
+
+.bottom {
+	padding: 0.5em 0 0.5em 0;
+	margin: 0 1em 0 0;
+}
+
+.contact {
+	text-align: right;
+}
 
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
@@ -82,23 +110,24 @@ a img { /* this selector removes the default blue border displayed in some brows
 
 /* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
 a:link {
-	color:#414958;
-	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+	color: #626D71;
+	/*text-decoration: underline;  unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
 }
+
 a:visited {
-	color: #4E5869;
-	text-decoration: underline;
+	color: #626D71;
 }
+
 a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
-	text-decoration: none;
+	font-style: italic;
 }
 
 /* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
-.container {
-	width: 80%;
-	max-width: 1260px;/
-	background-color: #333;
-	margin: 0 auto; /
+.body_container {
+	width: 70%;
+	max-width: 1260px;
+	margin: 0 auto; 
+	float: right;
 }
 
 /* ~~ This is the layout information. ~~*/
@@ -126,3 +155,24 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-size: 1px;
 	line-height: 0px;
 }
+
+
+/* --- MEDIA QUERIES --- */
+
+@media only screen and (max-width: 1000px) {
+	body {
+		font-size: 100%; 
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	body {
+		font-size: 70%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 35%;
+	}
+}	
