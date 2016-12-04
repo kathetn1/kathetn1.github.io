@@ -1,56 +1,217 @@
-<!doctype html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="author" content="Katherine T. Nguyen">
-<title>Katherine T. Nguyen</title>
-<link href="oneColLiqCtr.css" rel="stylesheet" type="text/css">
-</head>
+@charset "utf-8";
 
-<body>
+body {
+	font: 100%/1.0 Franklin Gothic, Helvetica, Verdana;
+	background-color: #694640;
+	margin: 0;
+	padding: 0;
+	margin-top: 0;	 
+	color: #CDCDC0;
+}
 
-<!-- MENU COLUMN -->
-<div class="menu">
-	<img src="img/cat icon.png" alt="cat icon" width= 50%>
-	<h3>
-    	<a href="profile_page.html">PROFILE</a></h3>
-    <h3>
-    	<a href="photo_gallery.html">PHOTO GALLERY</a>
-        </h3>  
-    </div>
-    
-<!-- CONTENT COLUMN -->
-<div class="body_container">
-<div class="content">
-  	<h3 id="motto">TOGETHER WE BUILD THE FUTURE.</h3>
-    <div class="profile">
-    	<h1>"Forever dreaming. Forever achieving. Forever sisters."</h1>
-    	</div>
-    
-    <!-- INFINITE PHOTO ROTATION -->    
-	<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script><script type="text/javascript" src="js/infinite-rotator.js"></script>
-    
-	<div id="rotating-item-wrapper"><img class="rotating-item" src="dropshadow_kat.png" width= 100%/>
- 		<img class="rotating-item" src="img/13582462_10209594265323577_2122483802_o copy.jpg"/>
-		<img class="rotating-item" src="img/IMG_20130205_181305.jpg" width= 100%/>
-		<img class="rotating-item" src="img/IMG_20140112_190355.jpg" width= 100%/>
-		<img class="rotating-item" src="img/Snapchat-1167450504163334957.jpg" width= 100%/>
-		<img class="rotating-item" src="img/Snapchat-6156294905688619401.jpg" width= 100%/>
-        </div> -->
+.header {
+	background-color: #987963;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header_text {
+	padding: 1em 5% 1em 5%;	
+}
+
+.body_container {
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+/* --- LEFT COLUMN --- */
+
+.menu {
+	margin: 3em auto;
+	width: 15%;
+	float: left;
+}
+
+/* --- RIGHT COLUMN --- */
+
+#name {
+	vertical-align: middle;
+	margin-left: -1em;
+	margin-top: -1em;
+}
+
+#motto {
+	text-align: right;
+}
+
+h1, h2 {
+	font-family: Georgia, Garamond, Baskerville, Times New Roman;
+}
+
+h1 {
+	text-align: right;
+	font-size: 1.7em;
+	padding: .2em 0 .4em 0;
+	width: 100%;
+	font-style: italic;
+}
+
+h2 {
+	text-align: justify;
+	font-size: 1.4em;
+	width: 100%;
+	margin: .2em 0 .2em 0;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h3 img { /*cat icon */
+	float: left;
+	text-align: center;
+}
+
+h3 a {
+	margin: 0 1em 0 .1em;
+}
+
+h4 {
+	font-size: 1.1em;
+}
+
+p {
+	font-size: 1em;
+}
+
+.circ {
+	float: inherit;
+}
+
+.bottom {
+	padding: 3em 0 0.25em 0;
+	margin: 0 1em 0 0;
+}
+
+.contact {
+	text-align: right;
+	padding-bottom: .35em;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
 
 
-<!-- --- OLD PHOTOS IN A ROW ---
-    <div>
-		<img src="img/Snapchat-6992534677065175623.jpg" alt="food1" width= 32%>
-		<img src="img/IMG_20160807_121255.jpg" alt="food2" width= 32%>
-        <img src="img/Snapchat-6156294905688619401.jpg" alt="food3" width= 32%>
-        </div>  -->
-        
-    <div class="bottom">
-    	<p class="contact">E-mail Address: kathetn1@uci.edu</a></p>
-        <p class="contact">Phone Number: (240) 670-5284</p>
-    </div>
-    <!-- end .content --></div>
-  <!-- end .container --></div>
-</body>
-</html>
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #626D71;
+	/*text-decoration: underline;  unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+
+a:visited {
+	color: #626D71;
+}
+
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	font-style: italic;
+}
+
+/* ~~ This is the layout information. ~~*/
+.content {
+	padding: 0 auto;
+	width: 70%;
+	max-width: 1260px;
+	margin: 3em auto; 
+	float: right;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; 
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { 
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { 
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+
+
+/* --- MEDIA QUERIES --- */
+
+@media only screen and (max-width: 1000px) {
+	body {
+		font-size: 100%; 
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	body {
+		font-size: 70%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	body {
+		font-size: 35%;
+	}
+}	
+
+/* --- DROPDOWN BUTTON --- */
+
+.dropbtn {
+    background-color: #987963;
+    color: #CDCDC0;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #D8C5AD;
+	color: #000;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	width: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+	padding: 1em 1em;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
