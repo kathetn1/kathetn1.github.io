@@ -2,19 +2,32 @@
 
 body {
 	font: 100%/1.0 Franklin Gothic, Helvetica, Verdana;
-	background-color: #CDCDC0;
+	background-color: #694640;
 	margin: 0;
 	padding: 0;
 	margin-top: 0;	 
+	color: #CDCDC0;
+}
+
+.header {
+	background-color: #987963;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header_text {
+	padding: 1em 5% 1em 5%;	
+}
+
+.body_container {
 	padding-right: 5%;
 	padding-left: 5%;
-	color: #626D71;
 }
 
 /* --- LEFT COLUMN --- */
 
 .menu {
-	width: 30%;
+	margin: 3em auto;
+	width: 15%;
 	float: left;
 }
 
@@ -27,8 +40,6 @@ body {
 }
 
 #motto {
-	color: #626D71;
-	padding-right: 1em;
 	text-align: right;
 }
 
@@ -41,13 +52,7 @@ h1 {
 	font-size: 1.7em;
 	padding: .2em 0 .4em 0;
 	width: 100%;
-	color: #b38867;
 	font-style: italic;
-}
-
-.profile {
-	position: relative;
-	width= 50%;	
 }
 
 h2 {
@@ -78,29 +83,18 @@ p {
 	font-size: 1em;
 }
 
-/* ---  --- */
-
-#rotating-item-wrapper {
-    position: relative;
-    width: 980px;
-    height: 347px;
+.circ {
+	float: inherit;
 }
-.rotating-item {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* ---  --- */
 
 .bottom {
-	padding: 0.5em 0 0.5em 0;
+	padding: 3em 0 0.25em 0;
 	margin: 0 1em 0 0;
 }
 
 .contact {
 	text-align: right;
+	padding-bottom: .35em;
 }
 
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
@@ -122,17 +116,13 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	font-style: italic;
 }
 
-/* ~~ this container surrounds all other divs giving them their percentage-based width ~~ */
-.body_container {
-	width: 70%;
-	max-width: 1260px;
-	margin: 0 auto; 
-	float: right;
-}
-
 /* ~~ This is the layout information. ~~*/
 .content {
 	padding: 0 auto;
+	width: 70%;
+	max-width: 1260px;
+	margin: 3em auto; 
+	float: right;
 }
 
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
@@ -176,3 +166,52 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 		font-size: 35%;
 	}
 }	
+
+/* --- DROPDOWN BUTTON --- */
+
+.dropbtn {
+    background-color: #987963;
+    color: #CDCDC0;
+    padding: 0.5em;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #D8C5AD;
+	color: #000;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	width: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+	padding: 1em 1em;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
