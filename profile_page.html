@@ -5,36 +5,39 @@
 <meta name="author" content="Katherine T. Nguyen">
 <title>Katherine T. Nguyen</title>
 <link href="profile.css" rel="stylesheet" type="text/css" />
+<script src="home_page.js" type="text/javascript"></script>
 </head>
 
-<body>
-
+<body>  
 <div class="container">
-  <div class="sidebar1">
-    <ul class="nav">
-      <li><a href="index.html"><img src="img/cat icon.png" alt="cat icon" width= 20%>Home Page</a></li>
-      <li><a href="photo_gallery.html"><img src="img/cat icon.png" alt="cat icon" width= 20%>Photo Gallery</a></li>
-    </ul>
-	<p>Contact information: </p>
-    <p><a href="kathetn1@uci.edu">kathetn1@uci.edu</a></p>
-    <!-- end .sidebar1 --></div>
+
+<!-- .header -->
+  	<div class="header">
+	<a href="home_page.html">
+    	<img src="img/crop coffee image.png" id= "coffee" width= 100%/>
+        </a>
+        </div>
+        
+<div class="menu">
+    
+<div class="dropdown">
+    	<button onClick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="">RESUME</a>
+            <a href="photo_gallery.html">INTERESTS</a>
+            <a href="">INF 133 - SUMMARY</a>
+      </div> <!-- class= "dropdown-content" -->
+    </div> <!-- class="dropdown" -->
+    
+</div> <!-- class="menu" -->
+    
   <div class="content">
-    <h1>Katherine T. Nguyen</h1>
-    <h2>Personal Bio</h2>
-    <p>I'm a fifth year undergraduate student at UCI.  I will be graduating Winter 2017 with a degree in Informatics with a specialization in OIT.  I am an active member of Phi Sigma Rho, the national engineering and science sorority.  I currently live in Orange County and hope to find a job after I graduate.</p>
-    <p></p>
-    <h3>Interests</h3>
-    	<ul><img src="img/cat icon.png" alt="cat icon" width= 10%>Food</ul>
-        <ul><img src="img/cat icon.png" alt="cat icon" width= 10%>Trying new places</ul>
-        <ul><img src="img/cat icon.png" alt="cat icon" width= 10%>Autocross racing</ul>
-        <ul><img src="img/cat icon.png" alt="cat icon" width= 10%>TV shows</ul>
-        <ul><img src="img/cat icon.png" alt="cat icon" width= 10%>Video games</ul>
-
-    <h3>Skills</h3>
-    	<ul><img src="img/cat icon.png" alt="cat icon" width= 10%>Manual and automatic driving</ul>
-        <ul><img src="img/cat icon.png" alt="cat icon" width= 10%>Painting</ul>
-        <ul><img src="img/cat icon.png" alt="cat icon" width= 10%>Basic woodshop skills</ul>
-
+    <h2>Profile</h2>
+    <p id="paragraph">Hi. My name is Katherine Nguyen.  This is my profile page.</p>
+    <div class="bottom">
+    	<p class="contact">E-mail Address: kathetn1@uci.edu</p>
+        <p class="contact">Phone Number: (###) ###-####</p>
+    </div>
     <!-- end .content --></div>
 <!-- end .container --></div>
 </body>
