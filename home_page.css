@@ -11,6 +11,7 @@ body {
 
 .header {
 	background-color: #987963;
+	border-bottom: .1em solid #428aa4;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -90,12 +91,9 @@ p {
 .bottom {
 	padding: 3em 0 0.25em 0;
 	margin: 0 1em 0 0;
+	text-align: right;
 }
 
-.contact {
-	text-align: right;
-	padding-bottom: .35em;
-}
 
 a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
 	border: none;
@@ -123,6 +121,11 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 	max-width: 1260px;
 	margin: 3em auto; 
 	float: right;
+}
+
+#coffee {
+	border: .3em solid #428aa4;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* ~~ This grouped selector gives the lists in the .content area space ~~ */
@@ -177,6 +180,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
     border: none;
     cursor: pointer;
 	width: 100%;
+	border: .08em solid #428aa4;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -211,7 +215,10 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+	background-color: #428aa4;
+	color: #FFF;
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
